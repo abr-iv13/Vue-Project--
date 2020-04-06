@@ -77,10 +77,11 @@
           const ad = {
             title: this.title,
             description: this.description,
-            promo: this.promo
+            promo: this.promo,
+            imageSrc: 'https://secure.meetupstatic.com/photos/event/3/5/2/1/600_476953601.jpeg'
           }
 
-          console.log(ad)
+          this.$store.dispath('createAd', ad)
         }
       }
     }
